@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>زیرزمین — پوشاک خیابونی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- نویز/بافت پس‌زمینه -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- نوار بالا -->
+<header class="topbar" id="topbar">
+  <div class="topbar__inner">
+    <button class="hamburger" id="hamburger" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobilenav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#" class="logo">زیرزمین<span class="logo__dot">.</span></a>
+
+    <nav class="nav" aria-label="ناوبری اصلی">
+      <a href="#products">محصولات</a>
+      <a href="#collection">کالکشن</a>
+      <a href="#story">درباره ما</a>
+      <a href="#footer">تماس</a>
+    </nav>
+
+    <div class="topbar__actions">
+      <button class="icon-btn" id="searchBtn" aria-label="جستجو" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn" id="cartBtn" aria-label="سبد خرید">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h2l1.4 10.2a2 2 0 0 0 2 1.8h6.9a2 2 0 0 0 2-1.7L20 9H7"/><circle cx="10" cy="20.5" r="1.1"/><circle cx="17" cy="20.5" r="1.1"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="searchbar" id="searchBar">
+    <div class="searchbar__inner">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="searchInput" placeholder="دنبال چی می‌گردی؟ مثلاً هودی، کتونی...">
+      <button type="button" id="searchClose" aria-label="بستن جستجو">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobilenav" id="mobilenav" aria-label="ناوبری موبایل">
+    <a href="#products">محصولات</a>
+    <a href="#collection">کالکشن</a>
+    <a href="#story">درباره ما</a>
+    <a href="#footer">تماس</a>
+  </nav>
+</header>
+
+<!-- هیرو -->
+<section class="hero">
+  <div class="hero__text">
+    <p class="hero__eyebrow">کالکشن پاییز ۰۴۰۲</p>
+    <h1 class="hero__title">
+      <span class="mis" data-text="جنس اصل">جنس اصل</span>
+      <span class="mis" data-text="حس خیابون">حس خیابون</span>
+    </h1>
+    <p class="hero__sub">طراحی‌شده برای کوچه‌پس‌کوچه‌های شهر، نه ویترین مغازه. هر تیکه از زیرزمین، دست‌ساز و محدوده.</p>
+    <div class="hero__cta">
+      <a href="#products" class="btn btn--accent">دیدن کالکشن</a>
+      <a href="#story" class="btn btn--ghost">داستان ما</a>
+    </div>
+  </div>
+
+  <div class="hero__art">
+    <div class="hero__panel">
+      <img src="images/hero.jpg" alt="کالکشن زیرزمین" class="hero__photo">
+    </div>
+    <div class="sticker sticker--float">
+      <span>٪۳۰</span>
+      <small>تخفیف کالکشن</small>
+    </div>
+  </div>
+</section>
+
+<!-- ردیف ویژگی‌ها -->
+<div class="features">
+  <div class="feature">
+    <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17 9 11 13 15 21 6M21 6h-5M21 6v5"/></svg></span>
+    <div class="feature__text"><strong>پرطرفدار</strong><span>داغِ همین الان</span></div>
+  </div>
+  <div class="feature">
+    <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9Z"/></svg></span>
+    <div class="feature__text"><strong>پرفروش‌ها</strong><span>منتخب کاربران</span></div>
+  </div>
+  <div class="feature">
+    <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg></span>
+    <div class="feature__text"><strong>تازه‌ها</strong><span>مدل‌های جدید</span></div>
+  </div>
+  <div class="feature">
+    <span class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h13v6H3zM16 9h3l3 3v6h-6z"/><circle cx="7.5" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/></svg></span>
+    <div class="feature__text"><strong>ارسال سریع</strong><span>به سراسر کشور</span></div>
+  </div>
+</div>
+
+<!-- نوار متحرک دسته‌بندی -->
+<div class="marquee">
+  <div class="marquee__track">
+    <button type="button" class="marquee__item" data-category="کفش">کفش</button>
+    <button type="button" class="marquee__item" data-category="هودی">هودی</button>
+    <button type="button" class="marquee__item" data-category="کلاه">کلاه</button>
+    <button type="button" class="marquee__item" data-category="کاپشن">کاپشن</button>
+    <button type="button" class="marquee__item" data-category="تیشرت">تیشرت</button>
+    <button type="button" class="marquee__item" data-category="کوله">کوله</button>
+    <button type="button" class="marquee__item" data-category="کفش" tabindex="-1" aria-hidden="true">کفش</button>
+    <button type="button" class="marquee__item" data-category="هودی" tabindex="-1" aria-hidden="true">هودی</button>
+    <button type="button" class="marquee__item" data-category="کلاه" tabindex="-1" aria-hidden="true">کلاه</button>
+    <button type="button" class="marquee__item" data-category="کاپشن" tabindex="-1" aria-hidden="true">کاپشن</button>
+    <button type="button" class="marquee__item" data-category="تیشرت" tabindex="-1" aria-hidden="true">تیشرت</button>
+    <button type="button" class="marquee__item" data-category="کوله" tabindex="-1" aria-hidden="true">کوله</button>
+  </div>
+</div>
+
+<!-- محصولات -->
+<section class="products" id="products">
+  <div class="section-head">
+    <h2>تازه از کارگاه</h2>
+    <p id="sectionSubtitle">شش تیکه از کالکشن این فصل، محدود و تمام‌شدنی.</p>
+    <button type="button" class="clear-filter" id="clearFilter" hidden>پاک کردن فیلتر ×</button>
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<!-- بنر تخفیف -->
+<div class="promo">
+  <div class="promo__item promo__item--dark">
+    <span class="promo__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.6 12 12.6 20a2 2 0 0 1-2.8 0l-6.8-6.8a2 2 0 0 1 0-2.8L11 2h6a2 2 0 0 1 2 2z"/><circle cx="14.5" cy="7.5" r="1"/></svg></span>
+    <div>
+      <small>پیشنهاد ویژه، محدود</small>
+      <strong>تا <em>٪۳۰</em> تخفیف</strong>
+    </div>
+  </div>
+  <div class="promo__item promo__item--light">
+    <span class="promo__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3Z"/></svg></span>
+    <div>
+      <small>ارسال به سراسر کشور</small>
+      <strong>روی خریدهای بالای ۲ میلیون تومان</strong>
+    </div>
+  </div>
+</div>
+
+<!-- داستان برند -->
+<section class="story" id="story">
+  <div class="story__col">
+    <h2 class="story__title">این یه فروشگاه نیست،<br>یه محله‌ست.</h2>
+    <p class="story__text">زیرزمین از دل یه کارگاه کوچیک تو پس‌کوچه‌های شهر شروع شد. هر طرح رو با دستِ خیاط‌های محل می‌دوزیم، نه تو یه کارخونه‌ی ناشناس. همین باعث میشه هر تیکه یه کم فرق داشته باشه؛ دقیقاً مثل خود شهر.</p>
+  </div>
+  <div class="story__stats">
+    <div class="stat">
+      <strong>۱۰۰٪</strong>
+      <span>نخ و پارچه اورجینال</span>
+    </div>
+    <div class="stat">
+      <strong>&lt;24h</strong>
+      <span>ارسال به سراسر کشور</span>
+    </div>
+    <div class="stat">
+      <strong>محلی</strong>
+      <span>دوخت دست خیاط‌های شهر</span>
+    </div>
+  </div>
+</section>
+
+<!-- نظر مشتری -->
+<section class="testimonial" id="collection">
+  <blockquote>
+    «هودی مه‌شب رو یه سال هر هفته پوشیدم، هنوز مثل روز اول جونه. زیرزمین چیزی که میگه رو تحویل میده.»
+  </blockquote>
+  <p class="testimonial__by">— امیر، ۲۴ ساله، تهران</p>
+</section>
+
+<!-- فوتر -->
+<footer class="footer" id="footer">
+  <div class="footer__newsletter">
+    <h3>به جمع زیرزمین بپیوند</h3>
+    <p>خبر کالکشن‌های جدید و تخفیف‌های محدود رو اول از همه بگیر.</p>
+    <form id="newsletterForm" class="newsletter-form">
+      <label for="email" class="sr-only">ایمیل</label>
+      <input type="email" id="email" placeholder="ایمیلت رو بنویس" required>
+      <button type="submit" class="btn btn--accent">عضویت</button>
+    </form>
+  </div>
+
+  <div class="footer__grid">
+    <div class="footer__col">
+      <p class="footer__logo">زیرزمین<span class="logo__dot">.</span></p>
+      <p>پوشاک خیابونی، ساخته‌شده تو دل شهر.</p>
+    </div>
+    <div class="footer__col">
+      <h4>فروشگاه</h4>
+      <a href="#products">محصولات</a>
+      <a href="#collection">کالکشن</a>
+      <a href="#story">درباره ما</a>
+    </div>
+    <div class="footer__col">
+      <h4>دنبال کن</h4>
+      <div class="social">
+        <a href="#" aria-label="اینستاگرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="#" aria-label="تلگرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 4 3 11l6 2.2M21 4l-3.2 16-8-5.8M21 4 9.8 13.2"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <p class="footer__copy">© ۱۴۰۴ زیرزمین. همه‌ی حقوق محفوظه.</p>
+</footer>
+
+<!-- سبد خرید -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="سبد خرید" aria-hidden="true">
+  <div class="cart-drawer__head">
+    <h3>سبد خرید</h3>
+    <button class="icon-btn" id="cartClose" aria-label="بستن سبد خرید">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg>
+    </button>
+  </div>
+  <div class="cart-drawer__items" id="cartItems">
+    <p class="cart-empty" id="cartEmpty">سبدت هنوز خالیه. یه چیزی از کالکشن انتخاب کن.</p>
+  </div>
+  <div class="cart-drawer__footer">
+    <div class="cart-total">
+      <span>جمع کل</span>
+      <strong id="cartTotal">۰ تومان</strong>
+    </div>
+    <button class="btn btn--accent btn--full" id="checkoutBtn">تسویه‌حساب</button>
+  </div>
+</aside>
+
+<!-- کادر جزئیات محصول -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<div class="modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="pmName" aria-hidden="true">
+  <button class="modal__close icon-btn" id="productModalClose" aria-label="بستن">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg>
+  </button>
+  <div class="modal__grid">
+    <div class="modal__media" id="pmMedia"></div>
+    <div class="modal__info">
+      <span class="modal__tag" id="pmTag"></span>
+      <h3 class="modal__name" id="pmName"></h3>
+      <p class="modal__price" id="pmPrice"></p>
+      <p class="modal__desc" id="pmDesc"></p>
+      <ul class="modal__features" id="pmFeatures"></ul>
+
+      <div class="modal__actions">
+        <div class="qty qty--lg">
+          <button type="button" id="pmQtyDec" aria-label="کم کردن">−</button>
+          <span id="pmQty">۱</span>
+          <button type="button" id="pmQtyInc" aria-label="زیاد کردن">+</button>
+        </div>
+        <button class="btn btn--accent btn--full" id="pmBuyBtn">افزودن و ادامه خرید</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal__reviews">
+    <h4>نظرات کاربران</h4>
+    <div class="reviews-list" id="pmReviews"></div>
+
+    <form class="review-form" id="reviewForm">
+      <p class="review-form__label">امتیازت چند ستاره‌ست؟</p>
+      <div class="review-form__stars" id="reviewStars">
+        <button type="button" data-value="1" aria-label="۱ ستاره">★</button>
+        <button type="button" data-value="2" aria-label="۲ ستاره">★</button>
+        <button type="button" data-value="3" aria-label="۳ ستاره">★</button>
+        <button type="button" data-value="4" aria-label="۴ ستاره">★</button>
+        <button type="button" data-value="5" aria-label="۵ ستاره">★</button>
+      </div>
+      <div class="field">
+        <label for="reviewName" class="sr-only">اسمت</label>
+        <input type="text" id="reviewName" placeholder="اسمت" required>
+      </div>
+      <div class="field">
+        <label for="reviewText" class="sr-only">نظرت</label>
+        <textarea id="reviewText" placeholder="نظرت رو درباره این محصول بنویس" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--ghost">ثبت نظر</button>
+    </form>
+  </div>
+</div>
+
+<!-- کادر پرداخت -->
+<div class="modal modal--checkout" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="coTitle" aria-hidden="true">
+  <button class="modal__close icon-btn" id="checkoutModalClose" aria-label="بستن">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 5l14 14M19 5 5 19"/></svg>
+  </button>
+  <h3 id="coTitle">تکمیل خرید</h3>
+
+  <div class="checkout__summary" id="checkoutSummary"></div>
+
+  <form id="checkoutForm" class="checkout-form" novalidate>
+    <div class="field">
+      <label for="fullname">نام و نام‌خانوادگی</label>
+      <input type="text" id="fullname" required>
+    </div>
+    <div class="field">
+      <label for="phone">شماره موبایل</label>
+      <input type="tel" id="phone" inputmode="numeric" pattern="09[0-9]{9}" placeholder="۰۹xxxxxxxxx" required>
+    </div>
+    <div class="field">
+      <label for="address">آدرس کامل</label>
+      <input type="text" id="address" required>
+    </div>
+
+    <div class="field">
+      <label for="cardNumber">شماره کارت</label>
+      <input type="text" id="cardNumber" inputmode="numeric" placeholder="xxxx xxxx xxxx xxxx" maxlength="19" required>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label for="cardExpiry">تاریخ انقضا</label>
+        <input type="text" id="cardExpiry" inputmode="numeric" placeholder="MM/YY" maxlength="5" required>
+      </div>
+      <div class="field">
+        <label for="cardCvv">CVV2</label>
+        <input type="text" id="cardCvv" inputmode="numeric" placeholder="xxx" maxlength="4" required>
+      </div>
+    </div>
+
+    <div class="checkout__total">
+      <span>مبلغ قابل پرداخت</span>
+      <strong id="checkoutTotal">۰ تومان</strong>
+    </div>
+
+    <button type="submit" class="btn btn--accent btn--full">پرداخت و ثبت سفارش</button>
+    <p class="checkout__note">این یک فرم نمایشیه؛ پرداخت واقعی انجام نمی‌شه و اطلاعات کارت جایی ذخیره نمی‌مونه.</p>
+  </form>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
